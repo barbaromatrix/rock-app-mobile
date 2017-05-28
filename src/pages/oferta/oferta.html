@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Oferta de doação
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <ion-card-content>
+            <ion-item-group>
+                <ion-item-divider color="light">
+                    <ion-icon ios="ios-medkit" md="md-medkit" item-left></ion-icon>
+                    DOAÇÃO
+                </ion-item-divider>
+                <ion-item>Produto: {{ oferta.produto.nm_produto }}</ion-item>
+                <ion-item>Quantidade disponível: {{ oferta.produto.qt_produto }}</ion-item>
+            </ion-item-group>
+            <ion-item-group>
+                
+            </ion-item-group>
+        </ion-card-content>
+    </ion-card>
+    <button ion-button block>Avançar no agendamento</button>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ofertas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let oferta of ofertas" (click)="selecionaOferta(oferta)">
+      <h2>{{ oferta.produto.nm_produto }}</h2>
+      <h3>Quantidade: {{ oferta.produto.qt_produto }}</h3>
+      <p>Doador: João</p>
+      <p>Última atualização: {{ oferta.data_oferta }}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
