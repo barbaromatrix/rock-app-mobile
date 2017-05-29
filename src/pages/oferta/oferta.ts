@@ -5,7 +5,6 @@ import { NavParams } from 'ionic-angular';
     templateUrl: 'oferta.html'
 })
 export class OfertaPage {
-    
     public oferta;
 
     constructor(public navParams: NavParams) {

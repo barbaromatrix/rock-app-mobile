@@ -8,6 +8,7 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { OfertaPage } from '../pages/oferta/oferta';
+import { ProdutoPage } from '../pages/produto/produto';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
@@ -16,7 +17,8 @@ import 'rxjs/add/operator/toPromise';
   declarations: [
     MyApp,
     HomePage, 
-    OfertaPage
+    OfertaPage,
+    ProdutoPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import 'rxjs/add/operator/toPromise';
   entryComponents: [
     MyApp,
     HomePage,
-    OfertaPage
+    OfertaPage,
+    ProdutoPage,
   ],
   providers: [
     StatusBar,
