@@ -28,7 +28,6 @@ export class HomePage implements OnInit {
         .map(res => res.json())
         .toPromise()
         .then(ofertas => {
-          console.table(ofertas);
           this.ofertas = ofertas;
           loader.dismiss();
         })

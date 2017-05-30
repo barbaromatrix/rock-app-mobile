@@ -14,7 +14,7 @@
                 Doação
             </ion-card-title>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laudantium rerum officia! Voluptatibus eaque minima, fuga, iste alias cumque tenetur enim quibusdam, doloribus molestias illo similique labore a doloremque, nesciunt.
+                {{ oferta.doador.endereco.nm_logradouro }}
             </p>
         </ion-card-content>
         <ion-item>
@@ -25,7 +25,7 @@
         <ion-item>
             <ion-icon item-start style="color: #55acee"></ion-icon>
             Doador
-            <ion-badge item-end>José carlos</ion-badge>
+            <ion-badge item-end>{{ oferta.doador.nm_usuario }}</ion-badge>
         </ion-item>
     </ion-card>
     <button ion-button block>Avançar no agendamento</button>

@@ -11,7 +11,7 @@
     <ion-item *ngFor="let oferta of ofertas" (click)="selecionaOferta(oferta)">
       <h2>{{ oferta.produto.nm_produto }}</h2>
       <h3>Quantidade: {{ oferta.produto.qt_produto }}</h3>
-      <p>Doador: João</p>
+      <p>Doador: {{ oferta.doador.nm_usuario }}</p>
       <p>Última atualização: {{ oferta.data_oferta }}</p>
     </ion-item>
   </ion-list>
