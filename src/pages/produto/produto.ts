@@ -15,7 +15,7 @@ export class ProdutoPage implements OnInit {
 
   ngOnInit(){
     this._http
-    .get('')
+    .get('https://trabalho-mobile-server-barbaromatrix.c9users.io/tipoProduto')
         .map(res => res.json())
         .toPromise()
         .then(categoriaProduto => {

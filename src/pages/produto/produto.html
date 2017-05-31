@@ -20,8 +20,8 @@
     </ion-item>
     <ion-item>
       <ion-label>Categoria</ion-label>
-      <ion-select [(ngModel)]="id_categoria" name="id_categoria">
-        <ion-option *ngFor="let categoria of categoriasProduto" value="{{ cateogria.id_categoria }}">{{ categoria.nm_categoria }}</ion-option>
+      <ion-select [(ngModel)]="id_tipo_produto" name="id_tipo_produto">
+        <ion-option *ngFor="let categoria of categoriasProduto" value="{{ categoria.id_tipo_produto }}">{{ categoria.nm_tipo_produto }}</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
