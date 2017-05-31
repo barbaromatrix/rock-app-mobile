@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ProdutoPage } from '../pages/produto/produto';
+import { MapaPage } from '../pages/mapa/mapa';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +14,7 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   rootPage = HomePage;
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(
     public platform: Platform,
@@ -25,8 +26,10 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Doações', component: ProdutoPage }
+      { title: 'Home', component: HomePage, icon:"home" },
+      { title: 'Mapa', component: MapaPage, icon:"map" },
+      { title: 'Doações', component: ProdutoPage, icon:"hand" },
+      { title: 'Meu Perfil', component: HomePage, icon:"contact" },
     ];
   }
 
