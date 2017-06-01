@@ -1,39 +1,40 @@
 <ion-header>
-
   <ion-navbar color="primary-color-dark">
     <ion-title>Nova Doação</ion-title>
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding style="overflow:hidden">
+<ion-content padding>
   <ion-card>
-  <form (ngSubmit)="agenda()">
-    <ion-card-header>
-    Produto
-    </ion-card-header>
-    <ion-item>
-      <ion-label stacked>Nome</ion-label>
-      <ion-input [(ngModel)]="nm_produto" name="nm_produto"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label stacked>Quantidade</ion-label>
-      <ion-input [(ngModel)]="qt_produto" name="qt_produto"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label>Categoria</ion-label>
-      <ion-select [(ngModel)]="id_tipo_produto" name="id_tipo_produto">
-        <ion-option *ngFor="let categoria of categoriasProduto" value="{{ categoria.id_tipo_produto }}">{{ categoria.nm_tipo_produto }}</ion-option>
-      </ion-select>
-    </ion-item>
-    <ion-item>
-      <ion-label stacked>Endereço</ion-label>
-      <ion-input [(ngModel)]="nm_endereco" name="nm_endereco"></ion-input>
-    </ion-item>
+    <form (ngSubmit)="agenda()">
+      <ion-card-header>
+      Produto
+      </ion-card-header>
+      <ion-item>
+        <ion-label stacked>Nome</ion-label>
+        <ion-input [(ngModel)]="nm_produto" name="nm_produto"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Quantidade</ion-label>
+        <ion-input [(ngModel)]="qt_produto" name="qt_produto"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Categoria</ion-label>
+        <ion-select [(ngModel)]="id_tipo_produto" name="id_tipo_produto">
+          <ion-option *ngFor="let categoria of categoriasProduto" value="{{ categoria.id_tipo_produto }}">{{ categoria.nm_tipo_produto }}</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Endereço</ion-label>
+        <ion-input [(ngModel)]="nm_endereco" name="nm_endereco"></ion-input>
+      </ion-item>
 
-    <button ion-button block type="submit" color="accent-color">Finalizar agendamento</button>
-    
-  </form>
+      <button ion-button block type="submit" color="accent-color">Finalizar agendamento</button>
+      
+    </form>
   </ion-card>
 </ion-content>

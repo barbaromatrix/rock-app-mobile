@@ -11,6 +11,7 @@ import { HomePage } from '../pages/home/home';
 import { OfertaPage } from '../pages/oferta/oferta';
 import { ProdutoPage } from '../pages/produto/produto';
 import { MapaPage } from '../pages/mapa/mapa';
+import { PerfilPage } from '../pages/perfil/perfil';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
@@ -22,7 +23,8 @@ import 'rxjs/add/operator/toPromise';
     HomePage, 
     OfertaPage,
     ProdutoPage,
-    MapaPage
+    MapaPage,
+    PerfilPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import 'rxjs/add/operator/toPromise';
     HomePage,
     OfertaPage,
     ProdutoPage,
-    MapaPage
+    MapaPage,
+    PerfilPage
   ],
   providers: [
     StatusBar,

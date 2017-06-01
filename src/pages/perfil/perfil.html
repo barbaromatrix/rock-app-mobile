@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-navbar color="primary-color-dark">
+    <ion-title>Perfil</ion-title>
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <form (ngSubmit)="agenda()">
+      <ion-card-header>
+      Seu perfil
+      </ion-card-header>
+      <ion-item>
+        <ion-label stacked>Nome</ion-label>
+        <ion-input required [(ngModel)]="nm_usuario" name="nm_produto"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Email</ion-label>
+        <ion-input disabled="" [(ngModel)]="nm_email_usuario" name="nm_email_usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Logradouro</ion-label>
+        <ion-input required [(ngModel)]="nm_logradouro" name="nm_logradouro"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Número</ion-label>
+        <ion-input required [(ngModel)]="cd_logradouro" name="cd_logradouro"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Número</ion-label>
+        <ion-input  [(ngModel)]="ds_complemento" name="ds_complemento"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Bairro</ion-label>
+        <ion-input  [(ngModel)]="nm_bairro" name="nm_bairro"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Bairro</ion-label>
+        <ion-input  [(ngModel)]="nm_bairro" name="nm_bairro"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Cidade</ion-label>
+        <ion-input  [(ngModel)]="nm_cidade" name="nm_cidade"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Estado</ion-label>
+        <ion-select [(ngModel)]="nm_estado" name="nm_estado">
+          <ion-option value="AC">Acre</ion-option>
+          <ion-option value="AL">Alagoas</ion-option>
+          <ion-option value="AP">Amapá</ion-option>
+          <ion-option value="AM">Amazonas</ion-option>
+          <ion-option value="BA">Bahia</ion-option>
+          <ion-option value="CE">Ceará</ion-option>
+          <ion-option value="DF">Distrito Federal</ion-option>
+          <ion-option value="ES">Espírito Santo</ion-option>
+          <ion-option value="GO">Goiás</ion-option>
+          <ion-option value="MA">Maranhão</ion-option>
+          <ion-option value="MT">Mato Grosso</ion-option>
+          <ion-option value="MS">Mato Grosso do Sul</ion-option>
+          <ion-option value="MG">Minas Gerais</ion-option>
+          <ion-option value="PA">Pará</ion-option>
+          <ion-option value="PB">Paraíba</ion-option>
+          <ion-option value="PR">Paraná</ion-option>
+          <ion-option value="PE">Pernambuco</ion-option>
+          <ion-option value="PI">Piauí</ion-option>
+          <ion-option value="RJ">Rio de Janeiro</ion-option>
+          <ion-option value="RN">Rio Grande do Norte</ion-option>
+          <ion-option value="RS">Rio Grande do Sul</ion-option>
+          <ion-option value="RO">Rondônia</ion-option>
+          <ion-option value="RR">Roraima</ion-option>
+          <ion-option value="SC">Santa Catarina</ion-option>
+          <ion-option value="SP">São Paulo</ion-option>
+          <ion-option value="SE">Sergipe</ion-option>
+          <ion-option value="TO">Tocantins</ion-option>
+        </ion-select>
+      </ion-item>
+      <button ion-button block type="submit" color="accent-color">Finalizar agendamento</button>
+    </form>
+  </ion-card>
+</ion-content>
