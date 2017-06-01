@@ -1,17 +1,20 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>produto</ion-title>
+  <ion-navbar color="primary-color-dark">
+    <ion-title>Nova Doação</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="overflow:hidden">
+  <ion-card>
   <form (ngSubmit)="agenda()">
-
+    <ion-card-header>
+    Produto
+    </ion-card-header>
     <ion-item>
-      <ion-label stacked>Produto</ion-label>
+      <ion-label stacked>Nome</ion-label>
       <ion-input [(ngModel)]="nm_produto" name="nm_produto"></ion-input>
     </ion-item>
     <ion-item>
@@ -29,6 +32,8 @@
       <ion-input [(ngModel)]="nm_endereco" name="nm_endereco"></ion-input>
     </ion-item>
 
-    <button ion-button block type="submit">Finalizar agendamento</button>
+    <button ion-button block type="submit" color="accent-color">Finalizar agendamento</button>
+    
   </form>
+  </ion-card>
 </ion-content>
